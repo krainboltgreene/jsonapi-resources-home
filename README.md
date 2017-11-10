@@ -13,7 +13,7 @@ First, set yourself up with a `HOME_LOCATION`, this is the protocol+hostname[+su
 
 ```
 HOME_LOCATION=https://origin.example.com
-``
+```
 
 To have this all work you just need to mount the engine:
 
