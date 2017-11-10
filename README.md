@@ -50,7 +50,7 @@ You'll get this payload:
 
 ``` json
 {
-	"data": []
+  "data": []
 }
 ```
 
@@ -69,122 +69,122 @@ Which results in this payload:
 
 ``` json
 {
-	"data": [
-		{
-			"id": "accounts-v1-list",
-			"type": "resources",
-			"links": {
-				"self": "http://localhost:3000/jsonapi/resources/home/v1/resources/accounts-v1-list"
-			},
-			"attributes": {
-				"namespace": "accounts",
-				"version": "v1",
-				"intent": "list",
-				"verb": "GET",
-				"href": "http://home.example.com/v1/accounts",
-				"allowed": null,
-				"mediatype": "application/vnd.api+json",
-				"description": "The accounts resource",
-				"created-at": "2017-11-10T00:27:39.039-08:00",
-				"updated-at": "2017-11-10T00:27:39.043-08:00"
-			}
-		},
-		{
-			"id": "accounts-v1-create",
-			"type": "resources",
-			"links": {
-				"self": "http://localhost:3000/jsonapi/resources/home/v1/resources/accounts-v1-create"
-			},
-			"attributes": {
-				"namespace": "accounts",
-				"version": "v1",
-				"intent": "create",
-				"verb": "POST",
-				"href": "http://home.example.com/v1/accounts",
-				"allowed": null,
-				"mediatype": "application/vnd.api+json",
-				"description": "The accounts resource",
-				"created-at": "2017-11-10T00:27:39.039-08:00",
-				"updated-at": "2017-11-10T00:27:39.044-08:00"
-			}
-		},
-		{
-			"id": "accounts-v1-show",
-			"type": "resources",
-			"links": {
-				"self": "http://localhost:3000/jsonapi/resources/home/v1/resources/accounts-v1-show"
-			},
-			"attributes": {
-				"namespace": "accounts",
-				"version": "v1",
-				"intent": "show",
-				"verb": "GET",
-				"href": "http://home.example.com/v1/accounts/{id}",
-				"allowed": null,
-				"mediatype": "application/vnd.api+json",
-				"description": "The accounts resource",
-				"created-at": "2017-11-10T00:27:39.039-08:00",
-				"updated-at": "2017-11-10T00:27:39.044-08:00"
-			}
-		},
-		{
-			"id": "accounts-v1-update",
-			"type": "resources",
-			"links": {
-				"self": "http://localhost:3000/jsonapi/resources/home/v1/resources/accounts-v1-update"
-			},
-			"attributes": {
-				"namespace": "accounts",
-				"version": "v1",
-				"intent": "update",
-				"verb": "PATCH",
-				"href": "http://home.example.com/v1/accounts/{id}",
-				"allowed": null,
-				"mediatype": "application/vnd.api+json",
-				"description": "The accounts resource",
-				"created-at": "2017-11-10T00:27:39.039-08:00",
-				"updated-at": "2017-11-10T00:27:39.045-08:00"
-			}
-		},
-		{
-			"id": "accounts-v1-update",
-			"type": "resources",
-			"links": {
-				"self": "http://localhost:3000/jsonapi/resources/home/v1/resources/accounts-v1-update"
-			},
-			"attributes": {
-				"namespace": "accounts",
-				"version": "v1",
-				"intent": "update",
-				"verb": "PATCH",
-				"href": "http://home.example.com/v1/accounts/{id}",
-				"allowed": null,
-				"mediatype": "application/vnd.api+json",
-				"description": "The accounts resource",
-				"created-at": "2017-11-10T00:27:39.039-08:00",
-				"updated-at": "2017-11-10T00:27:39.045-08:00"
-			}
-		},
-		{
-			"id": "accounts-v1-destroy",
-			"type": "resources",
-			"links": {
-				"self": "http://localhost:3000/jsonapi/resources/home/v1/resources/accounts-v1-destroy"
-			},
-			"attributes": {
-				"namespace": "accounts",
-				"version": "v1",
-				"intent": "destroy",
-				"verb": "DELETE",
-				"href": "http://home.example.com/v1/accounts/{id}",
-				"allowed": null,
-				"mediatype": "application/vnd.api+json",
-				"description": "The accounts resource",
-				"created-at": "2017-11-10T00:27:39.039-08:00",
-				"updated-at": "2017-11-10T00:27:39.046-08:00"
-			}
-		}
-	]
+  "data": [
+    {
+      "id": "accounts-v1-list",
+      "type": "resources",
+      "links": {
+        "self": "http://localhost:3000/jsonapi/resources/home/v1/resources/accounts-v1-list"
+      },
+      "attributes": {
+        "namespace": "accounts",
+        "version": "v1",
+        "intent": "list",
+        "verb": "GET",
+        "href": "http://home.example.com/v1/accounts",
+        "allowed": null,
+        "mediatype": "application/vnd.api+json",
+        "description": "The accounts resource",
+        "created-at": "2017-11-10T00:27:39.039-08:00",
+        "updated-at": "2017-11-10T00:27:39.043-08:00"
+      }
+    },
+    {
+      "id": "accounts-v1-create",
+      "type": "resources",
+      "links": {
+        "self": "http://localhost:3000/jsonapi/resources/home/v1/resources/accounts-v1-create"
+      },
+      "attributes": {
+        "namespace": "accounts",
+        "version": "v1",
+        "intent": "create",
+        "verb": "POST",
+        "href": "http://home.example.com/v1/accounts",
+        "allowed": null,
+        "mediatype": "application/vnd.api+json",
+        "description": "The accounts resource",
+        "created-at": "2017-11-10T00:27:39.039-08:00",
+        "updated-at": "2017-11-10T00:27:39.044-08:00"
+      }
+    },
+    {
+      "id": "accounts-v1-show",
+      "type": "resources",
+      "links": {
+        "self": "http://localhost:3000/jsonapi/resources/home/v1/resources/accounts-v1-show"
+      },
+      "attributes": {
+        "namespace": "accounts",
+        "version": "v1",
+        "intent": "show",
+        "verb": "GET",
+        "href": "http://home.example.com/v1/accounts/{id}",
+        "allowed": null,
+        "mediatype": "application/vnd.api+json",
+        "description": "The accounts resource",
+        "created-at": "2017-11-10T00:27:39.039-08:00",
+        "updated-at": "2017-11-10T00:27:39.044-08:00"
+      }
+    },
+    {
+      "id": "accounts-v1-update",
+      "type": "resources",
+      "links": {
+        "self": "http://localhost:3000/jsonapi/resources/home/v1/resources/accounts-v1-update"
+      },
+      "attributes": {
+        "namespace": "accounts",
+        "version": "v1",
+        "intent": "update",
+        "verb": "PATCH",
+        "href": "http://home.example.com/v1/accounts/{id}",
+        "allowed": null,
+        "mediatype": "application/vnd.api+json",
+        "description": "The accounts resource",
+        "created-at": "2017-11-10T00:27:39.039-08:00",
+        "updated-at": "2017-11-10T00:27:39.045-08:00"
+      }
+    },
+    {
+      "id": "accounts-v1-update",
+      "type": "resources",
+      "links": {
+        "self": "http://localhost:3000/jsonapi/resources/home/v1/resources/accounts-v1-update"
+      },
+      "attributes": {
+        "namespace": "accounts",
+        "version": "v1",
+        "intent": "update",
+        "verb": "PATCH",
+        "href": "http://home.example.com/v1/accounts/{id}",
+        "allowed": null,
+        "mediatype": "application/vnd.api+json",
+        "description": "The accounts resource",
+        "created-at": "2017-11-10T00:27:39.039-08:00",
+        "updated-at": "2017-11-10T00:27:39.045-08:00"
+      }
+    },
+    {
+      "id": "accounts-v1-destroy",
+      "type": "resources",
+      "links": {
+        "self": "http://localhost:3000/jsonapi/resources/home/v1/resources/accounts-v1-destroy"
+      },
+      "attributes": {
+        "namespace": "accounts",
+        "version": "v1",
+        "intent": "destroy",
+        "verb": "DELETE",
+        "href": "http://home.example.com/v1/accounts/{id}",
+        "allowed": null,
+        "mediatype": "application/vnd.api+json",
+        "description": "The accounts resource",
+        "created-at": "2017-11-10T00:27:39.039-08:00",
+        "updated-at": "2017-11-10T00:27:39.046-08:00"
+      }
+    }
+  ]
 }
 ```
 
@@ -209,25 +209,25 @@ You can also inquire about individual endpoints:
 
 ``` json
 {
-	"data": {
-		"id": "accounts-v1-list",
-		"type": "resources",
-		"links": {
-			"self": "http://localhost:3000/jsonapi/resources/home/v1/resources/accounts-v1-list"
-		},
-		"attributes": {
-			"namespace": "accounts",
-			"version": "v1",
-			"intent": "list",
-			"verb": "GET",
-			"href": "http://home.example.com/v1/accounts",
-			"allowed": null,
-			"mediatype": "application/vnd.api+json",
-			"description": "The accounts resource",
-			"created-at": "2017-11-10T01:01:28.576-08:00",
-			"updated-at": "2017-11-10T01:01:28.582-08:00"
-		}
-	}
+  "data": {
+    "id": "accounts-v1-list",
+    "type": "resources",
+    "links": {
+      "self": "http://localhost:3000/jsonapi/resources/home/v1/resources/accounts-v1-list"
+    },
+    "attributes": {
+      "namespace": "accounts",
+      "version": "v1",
+      "intent": "list",
+      "verb": "GET",
+      "href": "http://home.example.com/v1/accounts",
+      "allowed": null,
+      "mediatype": "application/vnd.api+json",
+      "description": "The accounts resource",
+      "created-at": "2017-11-10T01:01:28.576-08:00",
+      "updated-at": "2017-11-10T01:01:28.582-08:00"
+    }
+  }
 }
 ```
 
