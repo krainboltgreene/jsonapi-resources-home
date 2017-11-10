@@ -1,8 +1,8 @@
 # jsonapi-resources-home
 
-  - [![Build](http://img.shields.io/travis-ci/krainboltgreene/blankgem.gem.svg?style=flat-square)](https://travis-ci.org/krainboltgreene/blankgem.gem)
+  - [![Build](http://img.shields.io/travis-ci/krainboltgreene/jsonapi-resources-home.rb.svg?style=flat-square)](https://travis-ci.org/krainboltgreene/jsonapi-resources-home.rb)
   - [![License](http://img.shields.io/badge/license-ISC-brightgreen.svg?style=flat-square)](http://opensource.org/licenses/ISC)
-  - [![Version](http://img.shields.io/gem/v/blankgem.svg?style=flat-square)](https://rubygems.org/gems/blankgem)
+  - [![Version](http://img.shields.io/gem/v/jsonapi-resources-home.svg?style=flat-square)](https://rubygems.org/gems/jsonapi-resources-home)
 
 An implementation of JSONAPIHome (which is a fork of JSONHome).
 
