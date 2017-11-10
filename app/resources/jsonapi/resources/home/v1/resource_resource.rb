@@ -2,8 +2,10 @@ module JSONAPI
   module Resources
     module Home
       module V1
-        class ResourceResource < ApplicationResource
+        class ResourceResource < ::ApplicationResource
           immutable
+
+          model_name "JSONAPI::Resources::Home::V1::Resource"
 
           attribute :namespace
           attribute :version
@@ -13,6 +15,8 @@ module JSONAPI
           attribute :allowed
           attribute :mediatype
           attribute :description
+          attribute :created_at
+          attribute :updated_at
 
           def self.default_sort
             []
