@@ -13,7 +13,7 @@ module JSONAPI
           attr_accessor :namespace
           attr_accessor :version
           attr_accessor :intent
-          attr_accessor :method
+          attr_accessor :verb
           attr_accessor :href
           attr_accessor :allowed
           attr_accessor :mediatype
@@ -22,7 +22,11 @@ module JSONAPI
           private :route
 
           def self.all
-            routes.map(&method(:new)).reject(&:invalid?)
+            routes.map(&method(:new)).select(&:valid?)
+          end
+
+          def self.where(attributes)
+            all.where(attributes)
           end
 
           private_class_method def self.routes
@@ -34,19 +38,6 @@ module JSONAPI
 
           def initialize(route)
             @route = route
-          end
-
-          def to_hash
-            {
-              "intent" => intent,
-              "version" => version,
-              "namespace" => namespace,
-              "description" => description,
-              "method" => route.verb,
-              "href" => href,
-              "allowed" => [],
-              "mediatype" => MEDIATYPE
-            }
           end
 
           def id
@@ -73,8 +64,16 @@ module JSONAPI
             controller.instance_variable_get(:@jsonapi_resources_home_description)
           end
 
+          def verb
+            route.verb
+          end
+
           def href
             File.join(controller.instance_variable_get(:@json_api_home_location) || ENV.fetch("HOME_LOCATION"), path)
+          end
+
+          def mediatype
+            MEDIATYPE
           end
 
           def created_at
@@ -86,7 +85,7 @@ module JSONAPI
           end
 
           def valid?
-            controller.instance_variable_get(:@jsonapi_resources_home)
+            !route.internal && defaults.any? && controller.instance_variable_get(:@jsonapi_resources_home)
           end
 
           private def payload

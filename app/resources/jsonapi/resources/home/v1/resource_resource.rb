@@ -3,6 +3,8 @@ module JSONAPI
     module Home
       module V1
         class ResourceResource < ::ApplicationResource
+          key_type :string
+
           immutable
 
           model_name "JSONAPI::Resources::Home::V1::Resource"
@@ -10,7 +12,7 @@ module JSONAPI
           attribute :namespace
           attribute :version
           attribute :intent
-          attribute :method
+          attribute :verb
           attribute :href
           attribute :allowed
           attribute :mediatype
@@ -20,10 +22,6 @@ module JSONAPI
 
           def self.default_sort
             []
-          end
-
-          def method
-            @model.method
           end
         end
       end

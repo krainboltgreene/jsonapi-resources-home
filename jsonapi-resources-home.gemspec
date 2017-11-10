@@ -26,4 +26,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "sqlite3", "1.3.13"
   spec.add_runtime_dependency "rails", "5.1.4"
   spec.add_runtime_dependency "jsonapi-resources", "0.9.0"
+  spec.add_runtime_dependency "array-where", "2.0.0"
 end

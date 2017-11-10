@@ -1,4 +1,5 @@
 require "jsonapi-resources"
+require "array-where"
 
 module JSONAPI
   module ActsAsResourceController
