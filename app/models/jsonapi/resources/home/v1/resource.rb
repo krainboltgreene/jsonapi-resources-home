@@ -30,10 +30,7 @@ module JSONAPI
           end
 
           private_class_method def self.routes
-            Rails.
-              application.
-              routes.routes.
-              to_a
+            Rails.application.routes.routes.to_a
           end
 
           def initialize(route)
@@ -97,9 +94,13 @@ module JSONAPI
           end
 
           private def controller
-            if Object.const_defined?("#{defaults.fetch(:controller).classify.pluralize}Controller")
-              "#{defaults.fetch(:controller).classify.pluralize}Controller".constantize
-            end
+            controller_name.constantize
+          rescue NameError => exception
+            Rails.logger.debug("jsonapi_resources_home saw a route and tried to find #{controller_name}")
+          end
+
+          private def controller_name
+            "#{defaults.fetch(:controller).classify.pluralize}Controller"
           end
 
           private def defaults
