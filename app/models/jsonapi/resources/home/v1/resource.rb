@@ -85,7 +85,7 @@ module JSONAPI
           end
 
           def valid?
-            !route.internal && defaults.any? && controller.instance_variable_get(:@jsonapi_resources_home)
+            !route.internal && defaults.any? && controller.present? && controller.instance_variable_get(:@jsonapi_resources_home)
           end
 
           private def payload
@@ -97,7 +97,9 @@ module JSONAPI
           end
 
           private def controller
-            "#{defaults.fetch(:controller).classify.pluralize}Controller".constantize
+            if Object.const_defined?("#{defaults.fetch(:controller).classify.pluralize}Controller")
+              "#{defaults.fetch(:controller).classify.pluralize}Controller".constantize
+            end
           end
 
           private def defaults
