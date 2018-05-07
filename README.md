@@ -1,3 +1,5 @@
+NOTE: This repository has a successor project that doesn't depend on jsonapi-resources: https://github.com/krainboltgreene/jsonapi-home.rb 
+
 # jsonapi-resources-home
 
   - [![Build](http://img.shields.io/travis-ci/krainboltgreene/jsonapi-resources-home.rb.svg?style=flat-square)](https://travis-ci.org/krainboltgreene/jsonapi-resources-home.rb)
